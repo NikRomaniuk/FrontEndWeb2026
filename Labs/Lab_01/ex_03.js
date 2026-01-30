@@ -1,4 +1,3 @@
-// --- Actual Implementation ---
 // Returns a count of the number of characters in provided string
 function countChars(str, countSpacesOnSides) {
     // If second param is missing, return full length
