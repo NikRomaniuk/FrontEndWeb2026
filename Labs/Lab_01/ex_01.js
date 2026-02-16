@@ -6,5 +6,3 @@ var secondVal = 1;
 var sumOfVals = (firstVal + secondVal).toLocaleString();
 addition(sumOfVals);
 
-// tsc ...ts
-// node ...js
