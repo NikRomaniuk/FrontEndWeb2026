@@ -1,0 +1,37 @@
+<!-- List Componenet Markup -->
+<!-- Presidents list Header -->
+<h3>Presidents:</h3>
+
+<!-- This way is depricated -->
+<!--
+<ul presidentsList>
+    <li *ngFor="let person of presidents">
+        {{person.name}}
+    </li>
+</ul>
+-->
+
+<!-- Unordered list -->
+<ul>
+    <!-- Go through the list of the presidents (from back-end) -->
+    <!-- Foreach analogue -->
+    @for (pres of presidents; track pres) 
+    {
+    <!-- Generate an entry for each object -->
+    <li>
+        <!-- Prompt president's name and term -->
+        {{pres.name}} {{pres.term}}
+    </li>
+    }
+</ul>
+
+<!-- Ordered (numbered) list -->
+<!-- Technically the same as previous -->
+<ol>
+    @for (pres of presidents; track pres)
+    {
+    <li>
+        {{pres.name}} {{pres.term}}
+    </li>
+    }
+</ol>
