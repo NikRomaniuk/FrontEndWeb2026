@@ -32,3 +32,4 @@ addition(sumOfVals);
 //
 // Build an app
 // ng serve
+// ng generate service Services/DataService

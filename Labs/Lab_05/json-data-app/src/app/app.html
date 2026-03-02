@@ -1,0 +1,23 @@
+<h1>JSON App</h1>
+
+<!-- Students part -->
+<h2>Students</h2>
+<!-- Ordered (numbered) list -->
+<ol>
+    @for (student of students; track student)
+    {
+    <li>
+        <!-- Output students info using data provided by Data Service through external API -->
+        {{student.id}}, {{student.name}}, {{student.address}}
+    </li>
+    }
+</ol>
+
+<!-- Weather part -->
+<h2>Weather in Dublin</h2>
+<!-- Output weather info using data provided by Data Service through external API -->
+<p>{{weather[0].main}} (<i>{{weather[0].description}}</i>)</p>
+
+<!-- IMPORTANT -->
+<!-- Type any garbage below to make things above work! -->
+ ggggggggggg
