@@ -13,6 +13,7 @@ addition(sumOfVals);
 // SHORTCUTS
 // =============================
 // Shift + Alt + F -> Formatting
+// Shift + Tab -> Back Tab
 
 // Compile TypeScript/JavaScript
 // tsc ...ts
@@ -30,6 +31,20 @@ addition(sumOfVals);
 // Create new Angular App
 // ng new my-first-app
 //
-// Build an app
-// ng serve
+// Generate an Angular app
 // ng generate service Services/DataService
+//
+// Build an Angular app
+// ng serve
+
+// =========================
+// IONIC
+// =========================
+// Install Ionic CLI
+// npm i -g @ionic/cli
+//
+// Check Ionic Version
+// ionic -v#
+// 
+// Generate an Ionic app
+// ionic start provinces -app

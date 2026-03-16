@@ -1,0 +1,7 @@
+{
+  "name": "provinces",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

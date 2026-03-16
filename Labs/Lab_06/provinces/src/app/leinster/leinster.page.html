@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Add buttons in header of the page -->
+    <!-- "Start" for positioning -->
+    <ion-buttons slot="start">
+      <!-- Back arrow -->
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Leinster</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Leinster</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Add an image -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Leinster.svg">
+  <!-- Add a horizontal break -->
+  <hr>
+  <!-- Add a horizontal break -->
+  <ion-button (click)="onButtonClick()">Leinster Counties</ion-button>
+</ion-content>

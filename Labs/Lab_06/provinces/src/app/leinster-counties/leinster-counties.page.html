@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Add buttons in header of the page -->
+    <!-- "Start" for positioning -->
+    <ion-buttons slot="start">
+      <!-- Back arrow -->
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Leinster Counties</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Leinster Counties</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- List counties from an array-->
+  <h2>Leinster Counties</h2>
+  <!-- Unordered (dots) list -->
+  <ul>
+      @for (county of counties; track county)
+      {
+      <li>
+          <!-- Output single string county value -->
+          {{county}}
+      </li>
+      }
+  </ul>
+</ion-content>
