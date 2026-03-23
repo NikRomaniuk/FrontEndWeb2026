@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Absolute Cinema
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Styled Ionic list -->
+  <ion-list>
+    <!-- Output styled Ionic cards per movie provided by Movie Service through external API -->
+    @for (movie of movies; track movie)
+    {
+    <!-- Describe single item format -->
+    <ion-item>
+      <!-- Ionic card -->
+      <ion-card>
+        <!-- Image above -->
+        <img alt="Movie Poster" src="{{movie.Poster}}" />
+        <!-- Title & Year in header -->
+        <ion-card-header>
+          <ion-card-title>{{movie.Title}}</ion-card-title>
+          <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+    }
+  </ion-list>
+</ion-content>
