@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Update Status</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Styled Ionic list -->
+  <ion-list>
+    <!-- Group of radio items -->
+    <ion-radio-group [(ngModel)]="status">
+      <!-- Describe single item format -->
+      <!-- EXAMPLE -->
+      <ion-item>
+        <!-- Label -->
+        <ion-label>Happy</ion-label>
+        <!-- Radio Button -->
+        <ion-radio slot="end" value="Happy"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Sad</ion-label>
+        <ion-radio slot="end" value="Sad"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Energetic</ion-label>
+        <ion-radio slot="end" value="Energetic"></ion-radio>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Lazy</ion-label>
+        <ion-radio slot="end" value="Lazy"></ion-radio>
+      </ion-item>
+      
+    </ion-radio-group>
+  </ion-list>
+
+  <!-- Button -->
+  <!-- Saves Status -->
+  <ion-button (click)="saveStatus()">SAVE</ion-button>
+</ion-content>

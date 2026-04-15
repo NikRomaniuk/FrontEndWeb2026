@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Status App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <!-- You can auto-import staff by pressing Tab printing ionic component. Useful! -->
+
+  <!-- Ionic Label -->
+  <!-- Shows current Status -->
+  <ion-label>Your Status: {{status}}</ion-label>
+  <br>
+  <!-- Ionic Button -->
+  <!-- Refers to Status page using RouterLink -->
+  <ion-button [routerLink]="['/status']">Update Status</ion-button>
+</ion-content>
